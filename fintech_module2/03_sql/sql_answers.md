@@ -1,4 +1,4 @@
-1. Count Transactions by Status
+-- 1. Count Transactions by Status
 
 -- count transactions by status
 SELECT 
@@ -14,7 +14,7 @@ Chargeback: 4
 Insight:
 Most transactions are successfully completed. However, there are failed and chargeback transactions, indicating potential payment failures and fraud/dispute cases.
 
-2. Total Captured GMV by Merchant
+-- 2. Total Captured GMV by Merchant
 
 -- calculate total captured GMV by merchant
 SELECT 
@@ -33,7 +33,7 @@ City Pharma: 8640
 Insight:
 Beta Stores generates the highest revenue from successful transactions, followed by Alpha Mart. This helps identify top-performing merchants and revenue concentration.
 
-3. Top 10 Merchants by Captured GMV
+-- 3. Top 10 Merchants by Captured GMV
 
 Query used to identify top revenue-generating merchants based on successful transactions.
 SELECT *
@@ -55,7 +55,7 @@ City Pharma    8640
 Insight:
 This helps identify key merchants contributing most to total revenue, enabling better business focus and partnership strategies.
 
-4. Daily GMV and Successful Transactions
+-- 4. Daily GMV and Successful Transactions
 
 Calculated daily total GMV and number of successful transactions.
 
@@ -70,7 +70,7 @@ ORDER BY transaction_date;
 Insight:
 GMV varies across days, with the highest on 01-03-26 and lowest on 05-03-26. This indicates fluctuating transaction volumes and potential business trends.
 
-5. Merchants with Chargeback Ratio > 1%
+-- 5. Merchants with Chargeback Ratio > 1%
 
 Query identifies merchants with high chargeback rates.
 
@@ -86,7 +86,7 @@ ORDER BY chargeback_ratio DESC;
 Insight:
 Merchants with chargeback ratio above 1% may indicate higher fraud risk or customer disputes. These merchants require closer monitoring and potential intervention.
 
-6. Find regions with average risk score above 50 and more than 20 transactions
+-- 6. Find regions with average risk score above 50 and more than 20 transactions
 
 ## Regions with High Risk (Avg Risk > 50 & Transactions > 5)
 (Since more than 20 gives no records)
@@ -109,7 +109,7 @@ UNKNOWN:
 Insight:
 APAC shows the highest risk with significant transaction volume, indicating potential fraud exposure. UNKNOWN region also shows elevated risk, highlighting possible data quality or classification issues.
 
-7. Find users with 3 or more failed or chargeback transactions on the same day
+-- 7. Find users with 3 or more failed or chargeback transactions on the same day
 
 SELECT user_id,
        transaction_date,
@@ -125,7 +125,7 @@ Query identifies users with multiple risky transactions in a single day.
 Insight:
 Users with 3 or more failed or chargeback transactions in a day may indicate fraudulent behavior such as card testing or repeated payment failures.
 
-8. Show chargeback count, unique affected users, and chargeback amount by merchant
+-- 8. Show chargeback count, unique affected users, and chargeback amount by merchant
 
 SELECT merchant_name,
 COUNT(CASE WHEN status='chargeback' THEN 1 END) AS chargeback_count,
