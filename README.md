@@ -23,8 +23,6 @@ https://github.com/YOUR_USERNAME/fintech-data-analysis
 
 3. Open the Looker Studio dashboard using:
   05_visualization/dashboard_link.txt
-   
-4. Ensure the dashboard link is public to view insights.
 
 --Tools Used:
 -Microsoft Excel (Data Cleaning & Transformation)
