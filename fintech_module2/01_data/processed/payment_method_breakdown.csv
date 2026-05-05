@@ -1,0 +1,5 @@
+payment_method,total_amount,txn_count
+Card,16690.0,6
+NetBanking,3300.0,1
+UPI,2150.0,2
+Wallet,3000.0,2

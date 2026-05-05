@@ -1,0 +1,7 @@
+transaction_id,transaction_date,merchant_id,ledger_amount,gateway_amount,ledger_status,gateway_status,mismatch_type
+R002,01-03-2026,M002,850,900,success,success,Amount Mismatch
+R004,02-03-2026,M003,2100,,success,,Missing in Gateway
+R005,03-03-2026,M004,7200,7200,success,failed,Status Mismatch
+R008,04-03-2026,M001,640,600,success,success,Amount Mismatch
+R010,05-03-2026,M004,2500,,success,,Missing in Gateway
+R011,05-03-2026,M003,,1800,,success,Missing in Ledger
