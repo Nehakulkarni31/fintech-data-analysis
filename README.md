@@ -6,7 +6,7 @@ Name: Neha Kulkarni
 Student ID: BITSoM_FTAI_2601221
 
 GitHub Repository Link:
-https://github.com/YOUR_USERNAME/fintech-data-analysis
+https://github.com/Nehakulkarni31/fintech-data-analysis
 
 --Run Instructions
 
